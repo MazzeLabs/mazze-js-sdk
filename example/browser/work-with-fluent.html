@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Test sign</title>
+    <!-- <script src='/dist/mazze-js-sdk.umd.min.js'></script> -->
+    <script src='https://cdn.jsdelivr.net/npm/mazze-js-sdk/dist/mazze-js-sdk.umd.min.js'></script>
+  </head>
+  <body>
+    <button class="enableProxyProvider">Connect Fluent</button>
+    <h2>Account: <span class="showAccount"></span></h2>
+    <script>
+      const enableProxyProvider = document.querySelector('.enableProxyProvider');
+      const showAccount = document.querySelector('.showAccount');
+
+      enableProxyProvider.addEventListener('click', () => {
+        getAccount();
+      });
+
+      let account;
+
+      async function getAccount() {
+        const accounts = await proxyProvider.request({
+          method: 'mazze_accounts',
+        });
+        if (accounts.length === 0) {
+          alert('No account found');
+        }
+        account = accounts[0];
+        showAccount.innerHTML = account;
+      }
+    </script>
+
+    <br/><br/>
+    <button class="sendTxBtn2">SendTx with mazze-js-sdk</button>
+    <script>
+      let mazzeClient = new TreeGraph.ProxyProvider({
+        networkId: 1990,
+        logger: console,
+      });
+
+      // Connect SDK with fluent
+      mazzeClient.provider = proxyProvider;
+
+      const sendTxButton2 = document.querySelector('.sendTxBtn2');
+      sendTxButton2.addEventListener('click', async () => {
+        let nonce = await mazzeClient.mazze.getStatus();
+        console.log("status", nonce);
+        try {
+          let b = await mazzeClient.mazze.getBalance('mazzetest:aak2rra2njvd77ezwjvx04kkds9fzagfe6d5r8e957');
+          console.log("balance", b.toString());
+          let hash = await mazzeClient.mazze.sendTransaction({
+            from: account,
+            to: '0x0000000000000000000000000000000000000000',
+            value: '0x01',
+          });
+          alert('Send success, tx hash: ' + hash)
+        } catch(e) {
+          console.error(e) ;
+        }
+      });
+    </script>
+  </body>
+</html>

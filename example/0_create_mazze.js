@@ -60,7 +60,7 @@ async function getStatus() {
   console.log(await proxyProvider.getStatus());
   /*
   {
-    chainId: 1,
+    chainId: 1990,
     epochNumber: 779841,
     blockNumber: 1455488,
     pendingTxNumber: 2,
@@ -76,7 +76,7 @@ async function getStatusByProvider() {
   {
     bestHash: '0xbec9b9318a5473416b5bdf95d7f378c966ea0356aa98e2d96c8cad48aff32ebe',
     blockNumber: '0x163aaa',
-    chainId: '0x1',
+    chainId: 1990,
     epochNumber: '0xbe939',
     pendingTxNumber: '0x2'
   }

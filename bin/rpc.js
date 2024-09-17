@@ -4,13 +4,13 @@ const { program } = require('commander');
 const { ProxyProvider, Mazzy } = require('../src');
 
 const mainnetMeta = {
-  url: 'https://main.mazze.io',
+  url: 'https://rpc-mainnet.mazze.io',
   networkId: 9999,
   /* For change later */
 };
 
 const devnetMeta = {
-  url: 'https://devnet.mazze.io',
+  url: 'https://rpc-devnet.mazze.io',
   networkId: 1990,
 };
 

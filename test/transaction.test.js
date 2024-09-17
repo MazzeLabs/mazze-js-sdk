@@ -12,7 +12,7 @@ const txMeta = {
   value: 0,
   storageLimit: 0,
   epochHeight: 0,
-  chainId: 1,
+  chainId: 1990,
 };
 
 const rawTx = '0xf863df8001825208940123456789012345678901234567890123456789808080018001a0ef53e4af065905cb5134f7de4e9434e71656f824e3e268a9babb4f14ff808113a0407f05f44f79c1fd19262665d3efc29368e317fe5e77be27c0c1314b6a242a1e';
@@ -27,7 +27,7 @@ const tx2930Meta = {
   data: format.hex(Buffer.from('Hello, World')),
   storageLimit: 100,
   epochHeight: 100,
-  chainId: 100,
+  chainId: 1990,
   accessList: [
     {
       address: '0x19578cf3c71eab48cf810c78b5175d5c9e6ef441',
@@ -49,7 +49,7 @@ const tx1559Meta = {
   data: format.hex(Buffer.from('Hello, World')),
   storageLimit: 100,
   epochHeight: 100,
-  chainId: 100,
+  chainId: 1990,
   accessList: [
     {
       address: '0x19578cf3c71eab48cf810c78b5175d5c9e6ef441',
@@ -118,7 +118,7 @@ test('starts with 0x00', () => {
     value: 0,
     storageLimit: 0,
     epochHeight: 0,
-    chainId: 1,
+    chainId: 1990,
   });
 
   transaction.sign(KEY, 1);

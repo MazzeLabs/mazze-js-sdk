@@ -171,7 +171,7 @@ async function signAndSendTransactionManual() {
     value: 100000000000,
     storageLimit: 0,
     epochHeight: 789222,
-    chainId: 1,
+    chainId: 1990,
     data: null,
   };
 
@@ -188,7 +188,7 @@ async function signAndSendTransactionManual() {
     value: 100000000000,
     storageLimit: 0,
     epochHeight: 789222,
-    chainId: 1,
+    chainId: 1990,
     data: null,
     v: 1,
     r: '0xb1e32ebbd78453bb76fe90d5743bf6177240b55509296d51e75265878eec01a4',
@@ -217,7 +217,7 @@ function signTransactionByPrivateKey() {
     value: 100000000000,
     storageLimit: 0,
     epochHeight: 789222,
-    chainId: 1,
+    chainId: 1990,
     data: null,
   });
 
@@ -232,7 +232,7 @@ function signTransactionByPrivateKey() {
     value: 100000000000,
     storageLimit: 0,
     epochHeight: 789222,
-    chainId: 1,
+    chainId: 1990,
     data: null,
     v: undefined,
     r: undefined,
@@ -252,7 +252,7 @@ function signTransactionByPrivateKey() {
     value: 100000000000,
     storageLimit: 0,
     epochHeight: 789222,
-    chainId: 1,
+    chainId: 1990,
     data: null,
     v: 1,
     r: '0xb1e32ebbd78453bb76fe90d5743bf6177240b55509296d51e75265878eec01a4',
@@ -272,7 +272,7 @@ function signTransactionByPrivateKey() {
     value: 100000000000,
     storageLimit: 0,
     epochHeight: 789222,
-    chainId: 1,
+    chainId: 1990,
     data: null,
     v: 0,
     r: '0xef00d7647a00c781ecff231669bee273690ca4eaecd5fa45f15839b73d2d570c',

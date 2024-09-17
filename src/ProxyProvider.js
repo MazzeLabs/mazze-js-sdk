@@ -296,7 +296,7 @@ class ProxyProvider {
    * @example
    * > await proxyProvider.getStatus()
    {
-      chainId: 1029,
+      chainId: 9999,
       networkId: 1029,
       epochNumber: 1117476,
       blockNumber: 2230973,
@@ -681,7 +681,7 @@ class ProxyProvider {
       value: 0n,
       storageLimit: 1024n,
       epochHeight: 0,
-      chainId: 1029,
+      chainId: 9999,
       v: 1,
       status: 0,
       transactionIndex: 1,

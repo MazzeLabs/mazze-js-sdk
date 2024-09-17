@@ -72,18 +72,18 @@ const TRANSACTION_STORAGE_LIMIT = 0;
  * @constant {number}
  * @example
  * > CONST.MAINNET_ID
- 1029
+ 
  */
-const MAINNET_ID = 1029;
-
+const MAINNET_ID = 9999;
+ /* For change later */
 /**
  * Testnet chainId
  * @constant {number}
  * @example
  * > CONST.DEVNET_ID
- 1
+ 1990
  */
-const DEVNET_ID = 1;
+const DEVNET_ID = 1990;
 
 /**
  * Zero address

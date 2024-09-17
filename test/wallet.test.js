@@ -119,7 +119,7 @@ test('signTransaction', async () => {
     gas: 10000,
     storageLimit: 10000,
     epochHeight: 100,
-    chainId: 1,
+    chainId: 1990,
   };
 
   const transaction = await account.signTransaction(options);

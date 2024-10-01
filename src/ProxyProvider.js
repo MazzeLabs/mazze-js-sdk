@@ -297,7 +297,7 @@ class ProxyProvider {
    * > await proxyProvider.getStatus()
    {
       chainId: 9999,
-      networkId: 1029,
+      networkId: 1990,
       epochNumber: 1117476,
       blockNumber: 2230973,
       pendingTxNumber: 4531,

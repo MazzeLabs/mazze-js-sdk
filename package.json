@@ -1,7 +1,7 @@
 {
   "name": "@mazze-labs/mazze-js-sdk",
   "description": "Mazze Javascript Software Development Kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "LGPL-3.0",
   "author": "Paladin0x",
   "repository": "https://github.com/MazzeLabs/mazze-js-sdk.git",
@@ -36,7 +36,7 @@
   },
   "browserslit": "cover 99.5%",
   "dependencies": {
-    "@mazze-labs/mazze-address-js": "0.1.1",
+    "@mazze-labs/mazze-address-js": "0.1.2",
     "abi-util-lite": "^0.1.0",
     "big.js": "^5.2.2",
     "commander": "^8.0.0",
